@@ -1,0 +1,32 @@
+body {
+  color: powderblue;
+  background-image: url('/static/dog-sleep.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+q {
+  font-family: Courgette;
+  font-size: 400%;
+  text-shadow: 2px 2px black;
+}
+
+.quote-block {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.page-title {
+  font-family: open sans;
+  font-size: 120%;
+  margin: 30px 0 0 40px;
+  padding: 5px;
+  display: inline;
+  border: 2px solid powderblue;
+}
+
+.quote-block p {
+  font-family: open sans;
+  font-size: 150%
+}
