@@ -1,3 +1,7 @@
+body {
+  font-family: helvetica;
+}
+
 #logo {
   width: 10%;
   display: block;
@@ -75,8 +79,8 @@
   vertical-align: top;
   width: 40%;
   display: inline-block;
+  margin-right: 50px;
 }
-
 
 #picture {
   float: right;
@@ -98,7 +102,8 @@
 
 #most-popular {
   width: 20%;
-  display: inline-block;
+  display:inline-block;
+  padding: 0 50px 50px 150px;
   margin: 0 50px 50px 50px;
 }
 
@@ -106,6 +111,7 @@
   text-align: center;
   border: 1px solid #ccc;
   border-width: 1px 0;
+  padding: 10px;
 }
 
 #most-popular ol {
@@ -142,5 +148,19 @@
 .author-name {
   text-decoration: none;
   color: black;
-  font-family:
+}
+
+.t-small-r {
+  font-size: 0.85em;
+  color: red;
+}
+
+.remove-link-black-b {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+small {
+  color: grey;
 }
