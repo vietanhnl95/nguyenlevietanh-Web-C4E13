@@ -1,0 +1,60 @@
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#logo {
+  width: 10%;
+}
+
+#article-title h5{
+  font-style: italic;
+  color: #5d5d5d;
+}
+
+#picture {
+  float: right;
+  display: inline-block;
+  margin: 20px 10px 10px 10px;
+  width: 200px;
+}
+
+#picture img {
+  width: 200px;
+}
+
+#picture p {
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  width: inherit;
+}
+
+#most-popular {
+  vertical-align: middle;
+}
+
+#most-popular h3 {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: black;
+  text-align: center;
+}
+
+.footer a {
+  display: inline;
+  padding: 0 30px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  vertical-align: center;
+}
+
+.footer p {
+  display: inline-block;
+  margin: 10px 0;
+}
