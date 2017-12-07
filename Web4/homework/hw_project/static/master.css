@@ -2,6 +2,8 @@ body {
   font-family: open sans;
 }
 
+/*header style*/
+
 #page-header {
   width: 100%;
   height: 500px;
@@ -31,6 +33,22 @@ body {
   padding-left: 60px;
 }
 
+
+#head-section {
+  height: inherit;
+  margin-top: 100px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+/*#head-section h2 {
+  color: white;
+}*/
+
+/*content style*/
+
 #list-content {
   text-align: center;
 }
@@ -39,10 +57,10 @@ body {
   width: 300px;
   height: 250px;
   overflow: hidden;
-  text-align: center
+  text-align: center;
+  margin: 0 auto;
 }
 
 .image-box img {
   height: inherit;
-  position: relative;
 }
