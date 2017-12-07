@@ -13,7 +13,7 @@ app = Flask(__name__)
 #     description = request.form.get['des']
 #     Item.insert({'name': name, 'image': image, 'description': description})
 
-@app.route('/backend')
+@app.route('/addyourcafe')
 def backend():
     return render_template('backend.html')
 

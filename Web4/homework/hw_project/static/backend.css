@@ -1,0 +1,8 @@
+body {
+  background-image: url('../static/image/bg1.jpg');
+}
+
+#form {
+  width: 50%;
+  color: white;
+}
