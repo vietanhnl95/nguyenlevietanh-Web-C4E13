@@ -64,3 +64,11 @@ body {
 .image-box img {
   height: inherit;
 }
+
+#footer {
+  text-align: center;
+  background-color: #372517;
+  color: white;
+  padding: 8px;
+  opacity: 0.8
+}
