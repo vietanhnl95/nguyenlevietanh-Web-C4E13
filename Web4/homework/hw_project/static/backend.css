@@ -6,3 +6,7 @@ body {
   width: 50%;
   color: white;
 }
+
+.no-underline {
+  text-decoration: none !important;
+}

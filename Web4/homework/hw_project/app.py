@@ -1,25 +1,34 @@
-from flask import Flask, render_template, get_template_attribute, request
+from flask import Flask, render_template, request, redirect
 import mlab
-from input_app import Item
 from mongoengine import *
 
 app = Flask(__name__)
 
-# @app.route('/backend', methods = ['POST'])
-# def backend_insert():
-#     mlab.
-#     name = request.form.get['name']
-#     image = request.form.get['img']
-#     description = request.form.get['des']
-#     Item.insert({'name': name, 'image': image, 'description': description})
+mlab.connect()
 
-@app.route('/addyourcafe')
-def backend():
-    return render_template('backend.html')
+class Item(Document):
+    name = StringField()
+    image = StringField()
+    address = StringField()
 
 @app.route('/')
 def index():
-    return render_template('index.html', cf_shops = Item.objects)
+    cf_shops = Item.objects
+    return render_template('index.html', cf_shops = cf_shops)
+
+@app.route('/addyourcafe', methods = ['GET', 'POST'])
+def backend_insert():
+    if request.method == 'GET':
+        return render_template('backend.html')
+    elif request.method == 'POST':
+        form = request.form
+        name = form['name']
+        image = form['image']
+        address = form['address']
+        new_cafe = Item(name= name, image = image, address = address)
+        new_cafe.save()
+        return redirect('http://localhost:5000/addyourcafe')
+
 
 if __name__ == '__main__':
   app.run(debug=True)

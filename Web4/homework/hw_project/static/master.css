@@ -59,10 +59,12 @@ body {
   overflow: hidden;
   text-align: center;
   margin: 0 auto;
+  object-fit: cover;
 }
 
 .image-box img {
   height: inherit;
+  object-fit: cover;
 }
 
 #footer {

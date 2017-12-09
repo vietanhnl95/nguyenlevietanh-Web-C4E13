@@ -1,0 +1,29 @@
+.img-fit {
+  width: 348px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.logo {
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+}
+
+.bg-dark {
+  background-color: #5f4339 !important;
+  color: white;
+}
+
+.footer {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
