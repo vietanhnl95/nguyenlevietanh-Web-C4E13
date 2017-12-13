@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Edit
+{% endblock %}
+
+{% block page_content %}
+  <form class="container" method="post">
+    <input class="form-control" type="text" value="{{item.title}}" name="title" placeholder="Name">
+    <textarea name="description" rows="4" cols="60" placeholder="{{item.description}}">{{item.description}}</textarea>
+    <input class="form-control" name="image" value="{{item.image}}" placeholder="Image link">
+    <input class="form-control" name="price" value="{{item.price}}" placeholder="Price">
+
+    {% for message in get_flashed_messages() %}
+      <p class="text-success">{{message}}</p>
+    {% endfor %}
+
+    <button class="btn btn-primary" type="submit" name="">Submit</button>
+  </form>
+{% endblock %}
